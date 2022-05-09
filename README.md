@@ -59,6 +59,7 @@ As software developers, you have to think about it. The good news is that a lot 
 [Handling Events :: Eloquent JavaScript](https://eloquentjavascript.net/15_event.html)
 
 **Arrow functions and anonymous functions**
+
 [JavaScript Anonymous Functions](https://www.javascripttutorial.net/javascript-anonymous-functions/)
 
 [When You Should Not Use The Arrow Functions](https://www.javascripttutorial.net/es6/when-you-should-not-use-arrow-functions/)
@@ -111,15 +112,15 @@ You do this for two reasons:
 
 Complete the code in the “assign-starter” directory to create something that resembles a simple online store. I have provided two arrays of climbing shoe images hosted on [cloudinary](https://cloudinary.com/) however if you want to you can replace them with something else I won’t be looking at your work, this is just practice for you, so make it your own.
 
-Don’t add anything to the HTML document
+Don’t add anything to the HTML document body, insert new content using JavaScript.
 
 Use event delegation in completing the functionality described below
 
 Try to add the following functionality:
 
-When you click on five ten link in the header, display all of the five ten shoes in a grid.
+When you click on five ten in the header, display all of the five ten shoes in a grid.
 
-When you click on the scarpa link in the header, display all of the scarpa shoes in a grid.
+When you click on scarpa in the header, display all of the scarpa shoes in a grid.
 
 When an individual shoe is clicked on display a larger image of the this shoe, with some sort of simple close button (try using font awesome for this)
 
