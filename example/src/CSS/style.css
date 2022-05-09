@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  background: #EFEFEF;
+  color: #112B3C;
+}
+
+.container {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px
+}
+
+.item {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+  border: 1px solid #205375;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item p {
+  font-family: monospace;
+  font-size: 2rem;
+}
