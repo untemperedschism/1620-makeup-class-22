@@ -20,7 +20,9 @@ function itemTemplate(item) {
 
 function removeImg(evt) {
   const itemToRemove = selectIfImg(evt)
-  itemToRemove.remove()
+  if (itemToRemove !== undefined) {
+    itemToRemove.remove()
+  }
 }
 
 function selectIfImg(evt) {
