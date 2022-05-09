@@ -27,8 +27,7 @@ header ul {
   list-style: none;
 }
 
-header a {
-  text-decoration: none;
+header p {
   color: var(--black);
   font-size: 3rem;
 }
