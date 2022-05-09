@@ -58,6 +58,11 @@ As software developers, you have to think about it. The good news is that a lot 
 
 [Handling Events :: Eloquent JavaScript](https://eloquentjavascript.net/15_event.html)
 
+**Arrow functions and anonymous functions**
+[JavaScript Anonymous Functions](https://www.javascripttutorial.net/javascript-anonymous-functions/)
+
+[When You Should Not Use The Arrow Functions](https://www.javascripttutorial.net/es6/when-you-should-not-use-arrow-functions/)
+
 ## the event object
 
 In the section above I said that a lot of the hard work has been done for your. There are two mechanisms at play that contribute to this, both are things provided by the browser.
