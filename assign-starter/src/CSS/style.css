@@ -1,0 +1,40 @@
+:root {
+  --white:    #FAF5E4;
+  --black:    #2D2424;
+  --green:    #125B50;
+  --yellow:   #F8B400;
+  --red:      #FF6363;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  justify-content: end;
+  background-color: var(--red);
+  height: 5rem;
+}
+
+header ul {
+  padding-right: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  background-color: var(--white);
+  height: calc(100vh - 5rem);
+}
