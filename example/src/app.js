@@ -7,15 +7,35 @@ const climbingShoes = [
   { url: "https://res.cloudinary.com/dhv5sotva/image/upload/v1651974610/shoes/Five_Ten_Hiangle_Climbing_Shoes_White_EE9033_02_standard_hover_j63uup.jpg", description: "hiangle", id: 5 },
 ]
 
-// create a template to insert
+// create a template for climbing shoe items
 function itemTemplate(item) {
   const html = `
-    <div class="item" id="item-${item.id}">
+    <article class="item" id="item-${item.id}">
       <img src="${item.url}" alt="image of ${item.description}">
       <p>${item.description}</p>
-    </div>
+    </article>
   `
   return html
+}
+
+function removeImg(evt) {
+  const itemToRemove = selectIfImg(evt)
+  itemToRemove.remove()
+}
+
+function selectIfImg(evt) {
+  if (evt.target.localName === "img") {
+    const id = document.querySelector(`#${evt.target.parentNode.id}`)
+    return id
+  }
+}
+
+function attachContainerListener() {
+  const container = document.querySelector('.container')
+  container.addEventListener('click', (evt) =>{
+    console.log(evt)
+    removeImg(evt)
+    })
 }
 
 function insertItem(items) {
@@ -24,20 +44,10 @@ function insertItem(items) {
     const html = itemTemplate(item)
     container.insertAdjacentHTML('afterbegin', html)
   }
-  selectItem()
 }
 
-function selectItem() {
-  const item = document.querySelector('.container')
-  item.addEventListener('click', (evt) => {
-    console.log(evt)
-    if (evt.target.localName === "img") {
-      console.log(evt.target.currentSrc)
-      const id = document.querySelector(`#${evt.target.parentNode.id}`)
-      console.log(id)
-      //id.remove()
-    }
-  })
-}
-
-insertItem(climbingShoes)
+// run some functions when the page loads
+window.addEventListener('load', () => {
+  insertItem(climbingShoes)
+  attachContainerListener()    
+})
