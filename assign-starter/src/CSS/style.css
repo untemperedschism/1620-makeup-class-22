@@ -13,6 +13,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--white);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 header nav {
   display: flex;
   justify-content: end;
@@ -25,6 +34,7 @@ header ul {
   display: flex;
   gap: 20px;
   list-style: none;
+  background-color: var(--red);
 }
 
 header p {
@@ -32,8 +42,39 @@ header p {
   font-size: 3rem;
 }
 
-.container {
-  display: flex;
-  background-color: var(--white);
-  height: calc(100vh - 5rem);
+/* the grid uses css grid */
+/* all of the cool stuff happens in grid-template-columns */
+.shoe-grid {
+  max-width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 5px;
+}
+
+article.item {
+  padding: 5px;
+  border: 2px solid var(--red);
+}
+
+article img {
+  width: 100%;
+}
+
+article p {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: var(--black);
+}
+
+.single-shoe {
+  max-width: 80%
+}
+
+.single-shoe span {
+  font-size: 3rem;
+  color: var(--red);
+  position: relative;
+  top: 3.5rem;
+  left: 1rem;
 }
